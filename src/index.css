@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-scanner-sweep: scanner-sweep 3.2s ease-in-out infinite;
+  --animate-spin-slow: spin 25s linear infinite;
+  --animate-music-bar: music-bar 1.2s ease-in-out infinite;
+
+  @keyframes scanner-sweep {
+    0%, 100% {
+      transform: translateY(0px);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateY(145px);
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes music-bar {
+    0%, 100% {
+      transform: scaleY(0.4);
+    }
+    50% {
+      transform: scaleY(1.1);
+    }
+  }
+}
+
+/* Custom scrollbar utility */
+@utility scrollbar-thin {
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.1);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(6, 182, 212, 0.2);
+    border-radius: 2px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(6, 182, 212, 0.4);
+  }
+}
+
+@utility scrollbar-none {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

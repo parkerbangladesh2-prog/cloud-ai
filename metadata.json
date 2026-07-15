@@ -1,0 +1,6 @@
+{
+  "name": "JARVIS Voice Assistant",
+  "description": "An interactive, voice-controlled holographic assistant inspired by J.A.R.V.I.S., complete with speech recognition, synthesis, customized widgets, and Gemini API integration.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
